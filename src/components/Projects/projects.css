@@ -1,0 +1,16 @@
+.projects {
+    min-height: 100vh;
+}
+
+/* header  */
+.projects h3 {
+    font-size: 1.1em;
+    font-weight: 400;
+    padding: 4em 0;
+}
+
+/* content container */
+.projects .content {
+    height: 500px;
+    border: 1px solid black;
+}
