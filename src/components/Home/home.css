@@ -1,0 +1,10 @@
+@font-face {
+    font-family: WindSong;
+    src: url('/src/assets/fonts/WindSong-Medium.ttf');
+}
+
+/* Name  */
+h1 {
+    font-family: WindSong, cursive, serif;
+    font-style: italic;
+}
