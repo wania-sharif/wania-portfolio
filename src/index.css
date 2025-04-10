@@ -1,11 +1,17 @@
+@font-face {
+  font-family: WindSong;
+  src: url('/src/assets/fonts/WindSong-Medium.ttf');
+}
+
+/* default styles  */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light;
-  color: rgba(255, 255, 255, 0.87);
-  background: radial-gradient(at left top, #FFC8F8, #CFFFCA);
+  color: #463d3d;
+  background: radial-gradient(at left top, #ecc0cf, #ece7d0);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,8 +29,9 @@ a:hover {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 6.2em;
+  font-family: WindSong, cursive, serif;
+  font-style: italic;
 }
 
 button {

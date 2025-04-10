@@ -3,8 +3,22 @@
     src: url('/src/assets/fonts/WindSong-Medium.ttf');
 }
 
-/* Name  */
-h1 {
-    font-family: WindSong, cursive, serif;
-    font-style: italic;
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* name  */
+.home h1 {
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 560px) {
+    .home {
+        font-size: 11px;
+    }
 }
