@@ -1,3 +1,4 @@
+import ProjectCard from './ProjectCard/ProjectCard'
 import './projects.css'
 
 function Projects() {
@@ -6,7 +7,7 @@ function Projects() {
     <div className='projects'>
         <h3>PROJECTS</h3>
         <div className='content'>
-            
+            <ProjectCard />
         </div>
     </div>
   )
