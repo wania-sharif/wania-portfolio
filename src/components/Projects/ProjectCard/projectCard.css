@@ -1,8 +1,9 @@
 .project-card {
     font-size: 14px;
     width: 26em;
-    height: 32em;
+    height: 34em;
     padding: 10px;
+    margin: 0 3em;
     border: 1px solid black;
 
     display: flex;
@@ -29,5 +30,6 @@
     filter: saturate(90%);
     filter: opacity(90%);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
