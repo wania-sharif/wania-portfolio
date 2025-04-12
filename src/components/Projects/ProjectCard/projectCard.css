@@ -1,6 +1,33 @@
 .project-card {
     font-size: 14px;
     width: 26em;
-    height: 34em;
+    height: 32em;
+    padding: 10px;
     border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+}
+
+/* headers */
+.project-card h2 {
+    font-size: 1.3em;
+}
+.project-card h3 {
+    font-size: 1em;
+}
+
+/* image container  */
+.project-card .image {
+    width: 100%;
+    height: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: saturate(90%);
+    filter: opacity(90%);
+    background-position: center;
+    background-size: contain;
 }
