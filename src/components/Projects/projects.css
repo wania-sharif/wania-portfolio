@@ -6,8 +6,10 @@
 /* page content container */
 .projects .content {
     height: 100vh;
+    width: 100%;
     position: sticky;
     top: 0;
+    overflow: hidden;
 }
 
 /* header */
@@ -15,6 +17,7 @@
     font-size: 1.1em;
     font-weight: 400;
     padding: 4em 0;
+    width: 100%;
 }
 
 /* project card container */
