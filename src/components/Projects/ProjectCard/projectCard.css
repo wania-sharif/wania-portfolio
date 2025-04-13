@@ -10,6 +10,12 @@
     flex-direction: column;
     text-align: left;
     justify-content: space-around;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+.project-card:hover {
+    background-color: rgba(255, 243, 240, 0.442);
+    font-size: 14.8px;
 }
 
 /* headers */
