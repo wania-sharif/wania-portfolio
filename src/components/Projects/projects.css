@@ -22,6 +22,7 @@
 
 /* project card container */
 .projects .card-container {
+    height: 70vh;
     align-items: center;
     width: fit-content;
     display: flex;

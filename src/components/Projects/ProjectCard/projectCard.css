@@ -33,3 +33,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* adjust size for small screens  */
+@media screen and (max-width: 580px) {
+    .project-card {
+        font-size: 12px;
+    }
+}
