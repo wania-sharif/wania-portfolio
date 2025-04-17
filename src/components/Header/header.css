@@ -5,13 +5,17 @@
     height: 60px;
     position: sticky;
     top: 0;
+    font-size: 14px;
 }
 
 /* header lists  */
 .header > ul {
-    width: 250px;
+    width: 130px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+.header > ul:nth-of-type(3) {
+    width: 580px;
 }
 
 /* header list items  */
