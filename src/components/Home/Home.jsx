@@ -1,11 +1,21 @@
 import './Home.css'
+import { motion } from 'framer-motion'
 
 function Home() {
 
   return (
     <div className='home'>
-      <h1>Wania S.</h1>
-      <h2>SOFTWARE DEVELOPER</h2>
+      <motion.h1
+      initial={{ translateY: 40, opacity: 0 }}
+      animate={{ translateY: 0, opacity: 1 }}
+      transition={{duration: .3, ease: "easeInOut"}}
+      >Wania S.</motion.h1>
+
+      <motion.h2
+      initial={{ translateY: 40, opacity: 0 }}
+      animate={{ translateY: 0, opacity: 1 }}
+      transition={{duration: .4, ease: "easeInOut", delay: .1}}
+      >SOFTWARE DEVELOPER</motion.h2>
     </div>
   )
 }
