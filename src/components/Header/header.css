@@ -3,9 +3,18 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    padding: 0 20px;
+    position: sticky;
+    top: 0;
 }
 
+/* header lists  */
 .header > ul {
+    width: 250px;
     display: flex;
+    justify-content: center;
+}
+
+/* header list items  */
+.header > ul > li {
+    margin: 10px;
 }
