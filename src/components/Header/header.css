@@ -26,7 +26,7 @@
 
 /* links */
 .header > ul > li > a {
-    padding-bottom: 1px;
+    padding-bottom: 2px;
     color: inherit;
     display: inline-block;
     position: relative;
@@ -46,8 +46,14 @@
 
     transform-origin: bottom center;
 }
-
 .header a:hover::after,
 .header a:focus::after{
     transform: scaleX(1);
+}
+
+/* arrow icon  */
+.header .arrow {
+    display: inline;
+    padding-left: 4px;
+    height: 11px;
 }
