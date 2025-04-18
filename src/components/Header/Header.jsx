@@ -5,17 +5,17 @@ const Header = () => {
     return (
         <div className="header">
             <ul>
-                <li>WANIA SHARIF</li>
-            </ul>
-            <ul></ul>
-            <ul>
-                <li>PROJECTS</li>
-                <li>ABOUT ME</li>
-                <li>RESUME</li>
+                <li><a href="#home">WANIA SHARIF</a></li>
             </ul>
 
             <ul>
-                <li>CONTACT ME</li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="">PROJECTS</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
     );

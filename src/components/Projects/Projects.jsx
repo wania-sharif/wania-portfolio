@@ -9,7 +9,7 @@ function Projects() {
   const x = useTransform(scrollYProgress, [0, 1], ["90%", "-90%"]);
 
   return (
-    <div className='projects'>
+    <div className='projects' id='projects'>
         <div className='content'>
           <h3>PROJECTS</h3>
 

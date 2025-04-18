@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 function Home() {
 
   return (
-    <div className='home'>
+    <div className='home' id='home'>
       <motion.h1
       initial={{ translateY: 40, opacity: 0 }}
       animate={{ translateY: 0, opacity: 1 }}
