@@ -5,7 +5,8 @@
     height: 60px;
     position: sticky;
     top: 0;
-    font-size: 14px;
+    z-index: 2;
+    font-size: 13px;
 }
 
 /* header lists  */
@@ -21,4 +22,9 @@
 /* header list items  */
 .header > ul > li {
     margin: 10px;
+}
+
+/* links */
+.header > ul > li > a {
+    color: inherit;
 }

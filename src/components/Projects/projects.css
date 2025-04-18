@@ -10,13 +10,14 @@
     position: sticky;
     top: 0;
     overflow: hidden;
+    padding-top: 8em;
 }
 
 /* header */
 .projects .content > h3 {
     font-size: 1.1em;
     font-weight: 400;
-    padding: 4em 0;
+    /* padding: 2em 0; */
     width: 100%;
 }
 
