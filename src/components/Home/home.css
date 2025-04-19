@@ -1,0 +1,27 @@
+@font-face {
+    font-family: WindSong;
+    src: url('/src/assets/fonts/WindSong-Medium.ttf');
+}
+
+.home {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* name  */
+.home h1 {
+    margin-bottom: 20px;
+    line-height: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+@media screen and (max-width: 560px) {
+    .home {
+        font-size: 11px;
+    }
+}
