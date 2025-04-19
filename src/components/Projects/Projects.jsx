@@ -1,9 +1,16 @@
 import ProjectCard from './ProjectCard/ProjectCard'
 import './projects.css'
+import projects from '../../assets/data/projects';
 import { motion, useTransform, useScroll } from "framer-motion";
 
 function Projects() {
-  const { scrollYProgress } = useScroll();  // track scroll progress
+  // map each project to a project card
+  const projectCards = projects.map((project, index) => (
+    <ProjectCard key={index} project={project} />
+  ));
+
+  // track scroll progress
+  const { scrollYProgress } = useScroll();
 
   // Map scroll position values
   const x = useTransform(scrollYProgress, [0, 1], ["90%", "-90%"]);
@@ -14,10 +21,7 @@ function Projects() {
           <h3>PROJECTS</h3>
 
           <motion.div style={{ x }} className='card-container'>
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
+            {projectCards}
           </motion.div>
         </div>
     </div>

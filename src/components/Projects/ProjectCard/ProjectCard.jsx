@@ -1,21 +1,18 @@
 import './projectCard.css'
 
-function ProjectCard() {
-    const img_url = '/images/placeholder.png'
-
+function ProjectCard(props) {
   return (
     <div className='project-card'>
       <div className='text'>
-        <h2>PROJECT TITLE</h2>
-        <h3>SMALL DESC</h3>
+        <h2>{props.project.name}</h2>
+        <h3>{props.project.description}</h3>
 
         <ul>
-            <li>ReactJS</li>
-            <li>SQL</li>
-            <li>Full-Stack</li>
+          {props.project.tech.map((tech, index) => <li key={index}>{tech}</li> )}
         </ul>
       </div>
-        <div className='image' style={{backgroundImage: `url(${img_url})`}}></div>
+
+        <div className='image' style={{backgroundImage: `url(${props.project.images[0]})`}}></div>
     </div>
   )
 }
