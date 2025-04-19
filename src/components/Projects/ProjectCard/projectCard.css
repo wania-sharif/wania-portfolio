@@ -27,10 +27,21 @@
 
 /* headers */
 .project-card h2 {
-    font-size: 1.3em;
+    font-size: 1.4em;
+    letter-spacing: .5px;
 }
 .project-card h3 {
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* tech list  */
+.project-card ul {
+    display: flex;
+    gap: 0.9em;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 /* image container  */

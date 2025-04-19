@@ -3,9 +3,8 @@ const projects = [
         name: 'Renova',
         description: 'E-commerce platform for a clothing line',
         images: [
-            '/images/placeholder.png',
-            '/images/placeholder.png',
-            '/images/placeholder.png'],
+            '/images/renova1.png',
+            '/images/renova2.png'],
         tech: ['ReactJS', 'NodeJS', 'ExpressJS'],
         link: ''
     },
@@ -13,7 +12,7 @@ const projects = [
         name: 'Expense Tracker',
         description: 'App to track your expenses',
         images: [
-            '/images/placeholder.png',
+            '/images/money-app.png',
             '/images/placeholder.png',
             '/images/placeholder.png'],
         tech: ['Java', 'JDBC', 'IntelliJ'],
@@ -23,7 +22,7 @@ const projects = [
         name: 'The Easiest Game',
         description: 'A simple game to play...',
         images: [
-            '/images/placeholder.png',
+            '/images/theEasiestGame.png',
             '/images/placeholder.png',
             '/images/placeholder.png'],
         tech: ['Java', 'JavaFX', 'IntelliJ'],
