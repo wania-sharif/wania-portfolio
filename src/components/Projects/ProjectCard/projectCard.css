@@ -1,5 +1,5 @@
 .project-card {
-    font-size: 14px;
+    font-size: 15px;
     width: 26em;
     height: 32em;
     margin: 0 3em;
@@ -13,8 +13,8 @@
     transition-duration: 400ms;
 }
 .project-card:hover {
-    background-color: rgba(255, 243, 240, 0.567);
-    font-size: 14.8px;
+    background-color: rgba(255, 243, 240, 0.448);
+    font-size: 15.8px;
 }
 
 /* text container  */
@@ -41,7 +41,7 @@
     display: flex;
     gap: 0.9em;
     font-weight: 600;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 /* image container  */
