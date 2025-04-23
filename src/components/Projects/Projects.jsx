@@ -2,11 +2,12 @@ import ProjectCard from './ProjectCard/ProjectCard'
 import './projects.css'
 import projects from '../../assets/data/projects';
 import { motion, useTransform, useScroll } from "framer-motion";
+import githubIcon from '/images/github-mark.svg'
 
 function Projects() {
   // map each project to a project card
   const projectCards = projects.map((project, index) => (
-    <ProjectCard key={index} project={project} />
+    <ProjectCard key={index} project={project} icon={githubIcon} />
   ));
 
   // track scroll progress
