@@ -30,12 +30,24 @@
     font-weight: 200;
 }
 
+/* section headers  */
 .contact h2 {
     font-weight: 400;
     font-size: 1.2em;
     margin: 1.2em 0;
 }
 
+/* list items  */
 .contact ul > li {
     margin: 0.8em 0;
+}
+
+/* links  */
+.contact ul > li > a {
+    font-weight: 300;
+    transition-duration: 300ms;
+}
+.contact ul > li > a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffb392;
 }

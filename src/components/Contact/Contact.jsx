@@ -20,8 +20,8 @@ const Contact = () => {
                     transition={{ duration: 0.5, delay: 0.5 }}>
                     <h2>SOCIAL</h2>
                     <ul>
-                        <li>LinkedIn</li>
-                        <li>GitHub</li>
+                        <li><a href="https://www.linkedin.com/in/wania-sharif-a76834324" target='_blank'>LinkedIn</a></li>
+                        <li><a href="https://github.com/wania-sharif" target='_blank'>GitHub</a></li>
                     </ul>
                 </motion.div>
                 
@@ -31,8 +31,7 @@ const Contact = () => {
                 transition={{ duration: 0.4, delay: 0.6 }}>
                     <h2>CONTACT</h2>
                     <ul>
-                        <li>E-mail</li>
-                        <li>Whatsapp</li>
+                        <li><a href="mailto:someone@example.com">E-mail</a></li>
                     </ul>
                 </motion.div>
             </div>
