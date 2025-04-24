@@ -5,13 +5,12 @@
     color: #f3e1d1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 6em;
 }
 /* header  */
 .contact h3 {
     letter-spacing: 3px;  
-    font-size: 3em;  
+    font-size: 2.4em;  
     font-weight: 100;
 }
 
