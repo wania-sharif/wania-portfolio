@@ -1,0 +1,53 @@
+.contact {
+    height: 70vh;
+    padding: 10vh 4vw 0;
+    background-color: var(--brown);
+    color: #f3e1d1;
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+}
+/* header  */
+.contact h3 {
+    letter-spacing: 3px;  
+    font-size: 2.4em;  
+    font-weight: 100;
+}
+
+/* content container  */
+.contact > div {
+    padding: 2em 1em;
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+/* contact and socials sections */
+.contact .contacts, .contact .socials {
+    width: 100%;
+    border-top: 1px solid #f3e1d177;
+    text-align: left;
+    font-weight: 200;
+}
+
+/* section headers  */
+.contact h2 {
+    font-weight: 400;
+    font-size: 1.2em;
+    margin: 1.2em 0;
+}
+
+/* list items  */
+.contact ul > li {
+    margin: 0.8em 0;
+}
+
+/* links  */
+.contact ul > li > a {
+    font-weight: 300;
+    transition-duration: 300ms;
+}
+.contact ul > li > a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffb392;
+}
