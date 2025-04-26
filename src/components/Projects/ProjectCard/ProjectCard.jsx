@@ -1,26 +1,27 @@
 import { useEffect, useState } from 'react'
 import './projectCard.css'
+import { motion, AnimatePresence } from 'framer-motion'
 
 function ProjectCard(props) {
 
   const [image, setImage] = useState(0)
-  const [auto, setAuto] = useState(false)
+  const [isHovered, setIsHovered] = useState(false)
 
-  function setAutoplay() {
+  function setHovered() {
     setImage(1)
-    setAuto(true)
+    setIsHovered(true)
   }
 
-  function clearAutoplay() {
+  function setNotHovered() {
     setImage(0)
-    setAuto(false)
+    setIsHovered(false)
     clearTimeout(timeout)
   }
 
   let timeout = null
 
   useEffect(() => {
-    timeout = auto &&
+    timeout = isHovered &&
       setTimeout(() => {
         setImage(image === props.project.images.length - 1 ? 0 : image + 1)
       }, 1600);
@@ -28,25 +29,38 @@ function ProjectCard(props) {
 
   return (
     <div className='project-card' 
-    onMouseEnter={() => setAutoplay()} 
-    onMouseLeave={() => clearAutoplay()}>
+    onMouseEnter={() => setHovered()} 
+    onMouseLeave={() => setNotHovered()}>
 
-      <div className='icon'>
+      {/* <div className='icon'>
         <a href={props.project.link} target='_blank'>
           <img src={props.icon} alt='github' />
         </a>
-      </div>
+      </div> */}
+        <div className='text'>
+          <h2>{props.project.name}</h2>
+          <h3>{props.project.description}</h3>
 
-      <div className='text'>
-        <h2>{props.project.name}</h2>
-        <h3>{props.project.description}</h3>
+          <AnimatePresence mode="wait">
+            {isHovered && (
+            <motion.div
+            style={{ overflow: "hidden" }}
+            initial={{ height: 0 }}
+            animate={{ height: "auto" }}
+            exit={{ height: 0 }}
+            transition={{
+              duration: .2,
+              ease: "easeInOut",
+            }}>
+              <ul>
+                {props.project.tech.map((tech, index) => <li key={index}>{tech}</li> )}
+              </ul>
+            </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
 
-        <ul>
-          {props.project.tech.map((tech, index) => <li key={index}>{tech}</li> )}
-        </ul>
-      </div>
-
-        <div className='image' style={{backgroundImage: `url(${props.project.images[image]})`}}></div>
+        <motion.div className='image' style={{backgroundImage: `url(${props.project.images[image]})`}}></motion.div>
     </div>
   )
 }
