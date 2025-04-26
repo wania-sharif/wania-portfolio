@@ -1,7 +1,6 @@
 .project-card {
     font-size: 15px;
     width: 26em;
-    /* height: 32em; */
     margin: 0 4em;
     border: 1px solid rgb(40, 35, 33);
 
@@ -10,18 +9,11 @@
     flex-direction: column;
     text-align: left;
     justify-content: space-between;
-    cursor: pointer;
     transition-duration: 700ms;
     position: relative;
 }
 .project-card:hover {
-    background-color: rgba(255, 244, 213, 0.607);
-    /* font-size: 16.5px; */
-}
-
-/* section heading */
-.projects .content > h3 {
-    padding: 1em 0 3em;
+    background-color: rgba(255, 235, 213, 0.607);
 }
 
 /* text container  */
@@ -41,14 +33,15 @@
     font-size: 1.1em;
     font-weight: 300;
     font-style: italic;
-    padding-bottom: 1em;
+    padding-bottom: 1.1em;
 }
 
-/* tech list  */
-.project-card ul {
-    display: flex;
-    gap: 0.9em;
-    font-weight: 600;
+/* link to github  */
+.project-card .link {
+    
+}
+.project-card .link:hover {
+
 }
 
 /* image container  */
@@ -68,6 +61,22 @@
 .project-card:hover .image {
     filter: saturate(100%);
     filter: opacity(100%);
+}
+
+/* tech list  */
+.project-card ul {
+    display: flex;
+    gap: 0.9em;
+    margin: 0 0 0.7em 0.7em;
+}
+
+.project-card ul > li {
+    background-color: #7c867c;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 15px;
+    font-size: .8em;
+    font-weight: 500;
 }
 
 /* adjust size for small screens  */

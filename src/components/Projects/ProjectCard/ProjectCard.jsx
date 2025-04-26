@@ -32,11 +32,6 @@ function ProjectCard(props) {
     onMouseEnter={() => setHovered()} 
     onMouseLeave={() => setNotHovered()}>
 
-      {/* <div className='icon'>
-        <a href={props.project.link} target='_blank'>
-          <img src={props.icon} alt='github' />
-        </a>
-      </div> */}
         <div className='text'>
           <h2>{props.project.name}</h2>
           <h3>{props.project.description}</h3>
@@ -52,15 +47,33 @@ function ProjectCard(props) {
               duration: .2,
               ease: "easeInOut",
             }}>
-              <ul>
-                {props.project.tech.map((tech, index) => <li key={index}>{tech}</li> )}
-              </ul>
+              <a href={props.project.link} target='_blank' className='link'>View on GitHub</a>
             </motion.div>
             )}
           </AnimatePresence>
         </div>
 
         <motion.div className='image' style={{backgroundImage: `url(${props.project.images[image]})`}}></motion.div>
+
+        <AnimatePresence mode="wait">
+            {isHovered && (
+            <motion.div
+            style={{ overflow: "hidden" }}
+            initial={{ height: 0 }}
+            animate={{ height: "auto" }}
+            exit={{ height: 0 }}
+            transition={{
+              duration: .2,
+              ease: "easeInOut",
+            }}>
+              <ul>
+                {props.project.tech.map((tech, index) => <li key={index}>{tech}</li> )}
+              </ul>
+
+            </motion.div>
+            )}
+          </AnimatePresence>
+        
     </div>
   )
 }
