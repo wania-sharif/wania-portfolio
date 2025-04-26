@@ -37,11 +37,12 @@
 }
 
 /* link to github  */
-.project-card .link {
-    
-}
 .project-card .link:hover {
-
+    color: #7c867c;
+}
+.project-card .link img {
+    height: .9em;
+    margin-left: 0.2em;
 }
 
 /* image container  */
