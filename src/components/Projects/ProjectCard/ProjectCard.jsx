@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './projectCard.css'
 import { motion, AnimatePresence } from 'framer-motion'
+import Expand from '../../animated/Expand'
 
 function ProjectCard(props) {
 
@@ -38,17 +39,9 @@ function ProjectCard(props) {
 
           <AnimatePresence mode="wait">
             {isHovered && (
-            <motion.div
-            style={{ overflow: "hidden" }}
-            initial={{ height: 0 }}
-            animate={{ height: "auto" }}
-            exit={{ height: 0 }}
-            transition={{
-              duration: .2,
-              ease: "easeInOut",
-            }}>
+            <Expand>
               <a href={props.project.link} target='_blank' className='link'>View on GitHub</a>
-            </motion.div>
+            </Expand>
             )}
           </AnimatePresence>
         </div>
@@ -57,20 +50,11 @@ function ProjectCard(props) {
 
         <AnimatePresence mode="wait">
             {isHovered && (
-            <motion.div
-            style={{ overflow: "hidden" }}
-            initial={{ height: 0 }}
-            animate={{ height: "auto" }}
-            exit={{ height: 0 }}
-            transition={{
-              duration: .2,
-              ease: "easeInOut",
-            }}>
+            <Expand>
               <ul>
                 {props.project.tech.map((tech, index) => <li key={index}>{tech}</li> )}
               </ul>
-
-            </motion.div>
+            </Expand>
             )}
           </AnimatePresence>
         
