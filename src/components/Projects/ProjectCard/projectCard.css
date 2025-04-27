@@ -1,20 +1,19 @@
 .project-card {
-    font-size: 14px;
+    font-size: 15px;
     width: 26em;
-    height: 32em;
-    margin: 0 3em;
-    border: 1px solid black;
+    margin: 0 4em;
+    border: 1px solid rgb(40, 35, 33);
+
 
     display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: space-between;
-    cursor: pointer;
-    transition-duration: 400ms;
+    transition-duration: 700ms;
+    position: relative;
 }
 .project-card:hover {
-    background-color: rgba(255, 243, 240, 0.567);
-    font-size: 14.8px;
+    background-color: rgba(255, 235, 213, 0.607);
 }
 
 /* text container  */
@@ -22,15 +21,28 @@
     margin: 1.6em .7em;
     display: flex;
     flex-direction: column;
-    gap: 22px;
 }
 
 /* headers */
 .project-card h2 {
-    font-size: 1.3em;
+    font-size: 1.4em;
+    letter-spacing: .5px;
+    padding-bottom: .8em;
 }
 .project-card h3 {
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: 300;
+    font-style: italic;
+    padding-bottom: 1.1em;
+}
+
+/* link to github  */
+.project-card .link:hover {
+    color: #7c867c;
+}
+.project-card .link img {
+    height: .9em;
+    margin-left: 0.2em;
 }
 
 /* image container  */
@@ -44,12 +56,28 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition-duration: 800ms;
+    transition-duration: 400ms;
     margin: .7em;
 }
 .project-card:hover .image {
     filter: saturate(100%);
     filter: opacity(100%);
+}
+
+/* tech list  */
+.project-card ul {
+    display: flex;
+    gap: 0.9em;
+    margin: 0 0 0.7em 0.7em;
+}
+
+.project-card ul > li {
+    background-color: #7c867c;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 15px;
+    font-size: .8em;
+    font-weight: 500;
 }
 
 /* adjust size for small screens  */
