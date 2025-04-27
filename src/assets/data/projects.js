@@ -4,9 +4,10 @@ const projects = [
         description: 'E-commerce platform for a clothing line',
         images: [
             '/images/renova1.png',
-            '/images/renova2.png'],
+            '/images/renova2.png',
+            '/images/renova3.png'],
         tech: ['ReactJS', 'NodeJS', 'ExpressJS'],
-        link: ''
+        link: 'https://github.com/wania-sharif'
     },
     {
         name: 'Expense Tracker',
@@ -16,7 +17,7 @@ const projects = [
             '/images/placeholder.png',
             '/images/placeholder.png'],
         tech: ['Java', 'JDBC', 'IntelliJ'],
-        link: ''
+        link: 'https://github.com/wania-sharif'
     },
     {
         name: 'The Easiest Game',
@@ -26,7 +27,7 @@ const projects = [
             '/images/placeholder.png',
             '/images/placeholder.png'],
         tech: ['Java', 'JavaFX', 'IntelliJ'],
-        link: ''
+        link: 'https://github.com/wania-sharif'
     },
 ]
 

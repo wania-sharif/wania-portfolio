@@ -14,7 +14,7 @@ function Projects() {
   const { scrollYProgress } = useScroll();
 
   // Map scroll position values
-  const x = useTransform(scrollYProgress, [0, 1], ["100%", "-40%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["100%", "-100%"]);
 
   return (
     <div className='projects' id='projects'>
