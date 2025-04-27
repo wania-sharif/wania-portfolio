@@ -1,6 +1,14 @@
 @font-face {
   font-family: WindSong;
-  src: url('/src/assets/fonts/WindSong-Medium.ttf');
+  src: url('/src/assets/fonts/WindSong-Regular.ttf');
+}
+@font-face {
+  font-family: MissFajardose;
+  src: url('/src/assets/fonts/MissFajardose-Regular.ttf');
+}
+@font-face {
+  font-family: Dawn;
+  src: url('/src/assets/fonts/DawningofaNewDay-Regular.ttf');
 }
 
 /* default styles  */
@@ -29,8 +37,8 @@ a {
 }
 
 h1 {
-  font-size: 6.2em;
-  font-family: WindSong, cursive, serif;
+  font-size: 6em;
+  font-family: MissFajardose, cursive, serif;
   font-style: italic;
 }
 

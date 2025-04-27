@@ -13,10 +13,14 @@
 
 /* name  */
 .home h1 {
-    margin-bottom: 20px;
-    line-height: 120px;
-    overflow: hidden;
     white-space: nowrap;
+}
+
+.line {
+    height: 1em;
+    width: 1px;
+    background-color: var(--brown);
+    margin: 3em;
 }
 
 /* title  */

@@ -11,6 +11,8 @@ function Home() {
       transition={{duration: .3, ease: "easeInOut"}}
       >Wania S.</motion.h1>
 
+      <span className='line'></span>
+
       <motion.h2
       initial={{ translateY: 40, opacity: 0 }}
       animate={{ translateY: 0, opacity: 1 }}
