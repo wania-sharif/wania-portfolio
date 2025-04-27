@@ -19,9 +19,14 @@
     white-space: nowrap;
 }
 
+/* title  */
+.home h2 {
+    font-size: 16px;
+}
+
 
 @media screen and (max-width: 560px) {
     .home {
-        font-size: 11px;
+        font-size: 10px;
     }
 }
