@@ -4,8 +4,8 @@ const projects = [
         description: 'E-commerce platform for a clothing line',
         images: [
             '/images/renova1.png',
-            '/images/renova2.png',
-            '/images/renova3.png'],
+            '/images/renova3.png',
+            '/images/renova2.png'],
         tech: ['ReactJS', 'NodeJS', 'ExpressJS'],
         link: 'https://github.com/wania-sharif'
     },

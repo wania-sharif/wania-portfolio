@@ -25,13 +25,12 @@
 
 /* headers */
 .project-card h2 {
-    font-size: 1.4em;
+    font-size: 0.9em;
+    font-weight: 600;
     letter-spacing: .5px;
     padding-bottom: .8em;
 }
 .project-card h3 {
-    font-size: 1.1em;
-    font-weight: 300;
     font-style: italic;
     padding-bottom: 1.1em;
 }
@@ -58,6 +57,8 @@
     background-repeat: no-repeat;
     transition-duration: 400ms;
     margin: .7em;
+    margin-top: 0;
+
 }
 .project-card:hover .image {
     filter: saturate(100%);
@@ -72,7 +73,7 @@
 }
 
 .project-card ul > li {
-    background-color: #7c867c;
+    background-color: #738e78;
     color: #ffffff;
     padding: 5px 8px;
     border-radius: 15px;

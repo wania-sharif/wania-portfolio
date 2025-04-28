@@ -34,7 +34,7 @@ function ProjectCard(props) {
     onMouseLeave={() => setNotHovered()}>
 
         <div className='text'>
-          <h2>{props.project.name}</h2>
+          <h2>{props.project.name.toUpperCase()}</h2>
           <h3>{props.project.description}</h3>
 
           <AnimatePresence mode="wait">
