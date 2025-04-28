@@ -35,7 +35,7 @@ function ProjectCard(props) {
 
         <div className='text'>
           <h2>{props.project.name.toUpperCase()}</h2>
-          <h3>{props.project.description}</h3>
+          <h4>{props.project.description}</h4>
 
           <AnimatePresence mode="wait">
             {isHovered && (

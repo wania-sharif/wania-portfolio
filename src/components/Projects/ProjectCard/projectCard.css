@@ -30,7 +30,7 @@
     letter-spacing: .5px;
     padding-bottom: .8em;
 }
-.project-card h3 {
+.project-card h4 {
     font-style: italic;
     padding-bottom: 1.1em;
 }
@@ -51,7 +51,7 @@
     align-items: center;
     justify-content: center;
     filter: saturate(90%);
-    filter: opacity(75%);
+    filter: opacity(90%);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
