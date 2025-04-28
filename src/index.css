@@ -16,6 +16,7 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  letter-spacing: .08em;
 
   color-scheme: light;
   color: var(--brown);
@@ -37,9 +38,10 @@ a {
 }
 
 h1 {
-  font-size: 6em;
+  font-size: 5em;
   font-family: MissFajardose, cursive, serif;
   font-style: italic;
+  letter-spacing: 2px;
 }
 
 button {

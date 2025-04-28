@@ -14,13 +14,15 @@
 /* name  */
 .home h1 {
     white-space: nowrap;
+    translate: -10px 0;
 }
 
 .line {
     height: 1em;
     width: 1px;
     background-color: var(--brown);
-    margin: 3em;
+    margin-bottom: 2em;
+    margin-top: 1em;
 }
 
 /* title  */
@@ -31,6 +33,6 @@
 
 @media screen and (max-width: 560px) {
     .home {
-        font-size: 10px;
+        font-size: 15px;
     }
 }
