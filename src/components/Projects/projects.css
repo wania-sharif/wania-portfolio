@@ -14,8 +14,7 @@
 }
 
 /* header */
-.projects .content > h3 {
-    font-size: 1.1em;
+.projects .content > h2 {
     font-weight: 400;
     padding: 1em 0 3em;
     width: 100%;
