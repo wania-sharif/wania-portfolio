@@ -14,8 +14,8 @@ const projects = [
         description: 'App to track your expenses',
         images: [
             '/images/money-app.png',
-            '/images/placeholder.png',
-            '/images/placeholder.png'],
+            '/images/money-app2.png',
+            '/images/money-app3.png'],
         tech: ['Java', 'JDBC', 'IntelliJ'],
         link: 'https://github.com/wania-sharif'
     },
@@ -24,8 +24,8 @@ const projects = [
         description: 'A simple game to play...',
         images: [
             '/images/theEasiestGame.png',
-            '/images/placeholder.png',
-            '/images/placeholder.png'],
+            '/images/shop.png',
+            '/images/gameplay.png'],
         tech: ['Java', 'JavaFX', 'IntelliJ'],
         link: 'https://github.com/wania-sharif'
     },

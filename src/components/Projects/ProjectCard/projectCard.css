@@ -9,11 +9,11 @@
     flex-direction: column;
     text-align: left;
     justify-content: space-between;
-    transition-duration: 700ms;
+    transition-duration: 400ms;
     position: relative;
 }
 .project-card:hover {
-    background-color: rgba(255, 235, 213, 0.607);
+    background-color: rgba(238, 255, 213, 0.341);
 }
 
 /* text container  */
@@ -46,14 +46,14 @@
 
 /* image container  */
 .project-card .image {
-    height: 20em;
+    height: 16em;
     display: flex;
     align-items: center;
     justify-content: center;
     filter: saturate(90%);
     filter: opacity(90%);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     transition-duration: 400ms;
     margin: .7em;
@@ -73,7 +73,7 @@
 }
 
 .project-card ul > li {
-    background-color: #738e78;
+    background-color: #d7a0ac;
     color: #ffffff;
     padding: 5px 8px;
     border-radius: 15px;
