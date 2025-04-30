@@ -14,8 +14,10 @@
 
 /* paragraph */
 .about .content > p {
-    width: 40em;
-    line-height: 1.4em;
+    width: 34em;
+    line-height: 1.5em;
+    margin-top: 8rem;
+    font-size: 20px;
 }
 
 /* career container  */
@@ -26,8 +28,17 @@
 /* career item headers  */
 .about .career h3 {
     border-bottom: 1px solid #8b8787;
-    padding: 0 .5em .5em;
+    padding: 0 .2em .5em;
     margin-top: 8em;
+}
+
+/* awards list  */
+.career ul {
+    margin: 1.6em 0;
+}
+.career ul > li {
+    font-size: 13px;
+    margin: .8em 0;
 }
 
 /* career item  */
@@ -40,9 +51,10 @@
 .about .career-item > h4 {
     font-size: 13px;
     font-weight: 600;
-    margin-bottom: .2em;
+    margin-bottom: .4em;
 }
 /* career item description */
 .about .career-item > p:last-of-type {
     margin-top: .8em;
+    line-height: 1.2em;
 }
