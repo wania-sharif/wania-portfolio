@@ -1,3 +1,31 @@
 .about {
     min-height: 90vh;
 }
+
+/* page content container  */
+.about .content {
+    display: flex;
+    font-weight: 300;
+    font-size: 16px;
+    justify-content: space-between;
+    padding: 4em;
+    text-align: left;
+}
+
+/* paragraph */
+.about .content > p {
+    width: 40em;
+    line-height: 1.4em;
+}
+
+/* career container  */
+.about .content .career {
+    width: 20em;
+}
+
+/* career item headers  */
+.about .career h3 {
+    border-bottom: 1px solid #8b8787;
+    padding: 0 .5em .5em;
+    margin: 2em 0;
+}
