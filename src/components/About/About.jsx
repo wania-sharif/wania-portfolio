@@ -17,10 +17,37 @@ const About = () => {
 
                 <div className='career'>
                     <h3>EXPERIENCE</h3>
+                    <Item
+                        title="MOBILE APPLICATION DEVELOPMENT"
+                        date="2023 - 2026"
+                        description="St. Clair College, Windsor, Ontario"
+                    />
+                    <Item
+                        title="MOBILE APPLICATION DEVELOPMENT"
+                        date="2023 - 2026"
+                        description="St. Clair College, Windsor, Ontario"
+                    />
+
                     <h3>EDUCATION</h3>
+                    <Item
+                        title="MOBILE APPLICATION DEVELOPMENT"
+                        date="2023 - 2026"
+                        description="St. Clair College, Windsor, Ontario"
+                    />
                     
                 </div>
             </div>
+        </div>
+    );
+}
+
+// Item component to display individual items in the career section
+const Item = ({ title, date, description }) => {
+    return (
+        <div className='career-item'>
+            <h4>{title}</h4>
+            <p>{date}</p>
+            <p>{description}</p>
         </div>
     );
 }

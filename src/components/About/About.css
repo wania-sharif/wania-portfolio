@@ -1,5 +1,5 @@
 .about {
-    min-height: 90vh;
+    min-height: 110vh;
 }
 
 /* page content container  */
@@ -27,5 +27,22 @@
 .about .career h3 {
     border-bottom: 1px solid #8b8787;
     padding: 0 .5em .5em;
-    margin: 2em 0;
+    margin-top: 8em;
+}
+
+/* career item  */
+.about .career-item {
+    font-size: 13px;
+    padding: 0 .3em;
+    margin: 3em 0;
+}
+/* career item title */
+.about .career-item > h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: .2em;
+}
+/* career item description */
+.about .career-item > p:last-of-type {
+    margin-top: .8em;
 }
