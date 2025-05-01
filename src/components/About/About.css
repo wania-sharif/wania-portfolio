@@ -1,0 +1,103 @@
+.about {
+    min-height: 110vh;
+}
+
+/* page content container  */
+.about .content {
+    display: flex;
+    font-weight: 300;
+    font-size: 16px;
+    justify-content: space-between;
+    padding: 4em;
+    text-align: left;
+}
+
+/* text container  */
+.about .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+/* paragraph */
+.about .text > p {
+    width: 34em;
+    line-height: 1.5em;
+    margin-top: 8rem;
+    font-size: 17px;
+}
+/* highlighted words  */
+.about strong {
+    font-weight: 400;
+    color: #318881;
+    font-style: italic;
+}
+
+.about .content button {
+    width: fit-content;
+    font-size: 12px;
+}
+
+/* career container  */
+.about .content .career {
+    width: 20em;
+}
+
+/* career item headers  */
+.about .career h3 {
+    border-bottom: 1px solid #8b8787;
+    padding: 0 .2em .5em;
+    margin-top: 8em;
+}
+
+/* awards list  */
+.career ul {
+    margin: 1.6em 0;
+}
+.career ul > li {
+    font-size: 13px;
+    margin: .8em 0;
+}
+
+/* career item  */
+.about .career-item {
+    font-size: 13px;
+    padding: 0 .3em;
+    margin: 3em 0;
+}
+/* career item title */
+.about .career-item > h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: .4em;
+}
+/* career item description */
+.about .career-item > p:last-of-type {
+    margin-top: .8em;
+    line-height: 1.2em;
+}
+
+@media screen and (max-width: 1220px) {
+    .about .content {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .about .career {
+        width: 100%;
+    }
+    .about .career-item {
+        margin: 1.5em 0;
+    }
+    
+}
+
+@media screen and (max-width: 1220px) {
+    .about .text > p {
+        width: 100%;
+    }
+
+    .about .career {
+        width: 100%;
+    }
+}

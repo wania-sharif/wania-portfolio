@@ -19,7 +19,7 @@ function Projects() {
   return (
     <div className='projects' id='projects'>
         <div className='content'>
-          <h3>PROJECTS</h3>
+          <h2>PROJECTS</h2>
 
           <motion.div style={{ x }} className='card-container'>
             {projectCards}

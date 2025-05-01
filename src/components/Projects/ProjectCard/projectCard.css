@@ -9,11 +9,11 @@
     flex-direction: column;
     text-align: left;
     justify-content: space-between;
-    transition-duration: 700ms;
+    transition-duration: 400ms;
     position: relative;
 }
 .project-card:hover {
-    background-color: rgba(255, 235, 213, 0.607);
+    background-color: rgba(238, 255, 213, 0.341);
 }
 
 /* text container  */
@@ -25,13 +25,12 @@
 
 /* headers */
 .project-card h2 {
-    font-size: 1.4em;
+    font-size: 0.9em;
+    font-weight: 600;
     letter-spacing: .5px;
     padding-bottom: .8em;
 }
-.project-card h3 {
-    font-size: 1.1em;
-    font-weight: 300;
+.project-card h4 {
     font-style: italic;
     padding-bottom: 1.1em;
 }
@@ -47,17 +46,19 @@
 
 /* image container  */
 .project-card .image {
-    height: 20em;
+    height: 16em;
     display: flex;
     align-items: center;
     justify-content: center;
     filter: saturate(90%);
-    filter: opacity(75%);
+    filter: opacity(90%);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     transition-duration: 400ms;
     margin: .7em;
+    margin-top: 0;
+
 }
 .project-card:hover .image {
     filter: saturate(100%);
@@ -72,7 +73,7 @@
 }
 
 .project-card ul > li {
-    background-color: #7c867c;
+    background-color: #d7a0ac;
     color: #ffffff;
     padding: 5px 8px;
     border-radius: 15px;

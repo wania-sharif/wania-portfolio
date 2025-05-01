@@ -13,15 +13,26 @@
 
 /* name  */
 .home h1 {
-    margin-bottom: 20px;
-    line-height: 120px;
-    overflow: hidden;
     white-space: nowrap;
+    translate: -10px 0;
+}
+
+.line {
+    height: 1em;
+    width: 1px;
+    background-color: var(--brown);
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+/* title  */
+.home h2 {
+    font-size: 16px;
 }
 
 
 @media screen and (max-width: 560px) {
     .home {
-        font-size: 11px;
+        font-size: 15px;
     }
 }
