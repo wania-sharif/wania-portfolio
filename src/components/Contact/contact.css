@@ -1,5 +1,5 @@
 .contact {
-    height: 70vh;
+    height: 60vh;
     padding: 10vh 4vw 0;
     background-color: var(--brown);
     color: #f3e1d1;
@@ -21,12 +21,11 @@
     border-top: 1px solid #f3e1d177;
     text-align: left;
     font-weight: 200;
-    color: #d2c1b2;
 }
 
 /* list items  */
 .contact ul > li {
-    margin: 0.8em 0;
+    margin: .9em 0;
 }
 
 /* links  */
@@ -39,9 +38,9 @@
 }
 
 /* copyright */
-.contact p {
+.contact .copyright {
     font-size: 0.7em;
-    text-align: left;
+    text-align: right;
     margin-top: auto;
-    padding-bottom: 20px;
+    padding-bottom: 2em;
 }
