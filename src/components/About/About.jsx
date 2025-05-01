@@ -4,14 +4,13 @@ const About = () => {
     return (
         <div className="about">
             <div className='content'>
-                <p>Hey, I'm Wania! I am a software developer based in Windsor, Ontario. <br/>
-                I have a passion for creating <strong>beautiful,</strong> functional, and user-friendly applications. <br/>
-                My goal is to use my <strong>creativity</strong> in ways that bring <strong>satisfaction</strong> to others. <br/>
-
-                <br/>I am currently pursuing a degree in Mobile Application Development at St. Clair College.
-                I have worked on several projects, including full-stack web and mobile applications. <br/>
-                I am always eager to learn new technologies and improve my skills. <br/>
-                </p>
+                <div className='text'>
+                    <p>Hey, I'm Wania!<br/> I am a software developer based in Windsor, Ontario. <br/><br/>
+                    I have a passion for creating <strong>beautiful,</strong> functional, and user-friendly applications.
+                    My goal is to use my <strong>creativity</strong> to cultivate experiences that satisfy others. <br/>
+                    </p>
+                    <button>MORE ABOUT ME</button>
+                </div>
 
                 <div className='career'>
                     <h3>EXPERIENCE</h3>
@@ -32,7 +31,7 @@ const About = () => {
                         the development of full stack applications."
                     />
 
-                    <h3>AWARDS</h3> 
+                    {/* <h3>AWARDS</h3> 
                     <ul>
                         <li>Academic Excellence Scholarship x2</li>
                         <li>Academic Distinction Award x3</li>
@@ -44,7 +43,7 @@ const About = () => {
                         title="Mobile Application Development, AA/OCAD"
                         date="2023 - 2026"
                         description="St. Clair College, Windsor, Ontario"
-                    />
+                    /> */}
                     
                 </div>
             </div>

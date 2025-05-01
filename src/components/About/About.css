@@ -12,18 +12,30 @@
     text-align: left;
 }
 
+/* text container  */
+.about .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
 /* paragraph */
-.about .content > p {
+.about .text > p {
     width: 34em;
     line-height: 1.5em;
     margin-top: 8rem;
-    font-size: 19px;
+    font-size: 17px;
 }
 /* highlighted words  */
 .about strong {
     font-weight: 400;
     color: #318881;
     font-style: italic;
+}
+
+.about .content button {
+    width: fit-content;
+    font-size: 12px;
 }
 
 /* career container  */
@@ -81,7 +93,7 @@
 }
 
 @media screen and (max-width: 1220px) {
-    .about .content > p {
+    .about .text > p {
         width: 100%;
     }
 
