@@ -3,31 +3,32 @@ import './about.css';
 const About = () => {
     return (
         <div className="about">
-            {/* <h2>ABOUT ME</h2> */}
             <div className='content'>
-                <p>Hey, I'm Wania Sharif. I am a software developer based in Windsor, Ontario <br/>
-                    <br/>Quisque ac finibus nulla. Orci varius natoque penatibus et magnis 
-                    dis parturient montes, nascetur ridiculus mus. Nam a lorem congue, 
-                    pellentesque erat ultrices, porttitor dolor. Nullam sit amet lorem 
-                    ultricies, cursus sapien at, consectetur magna.
+                <p>Hey, I'm Wania! I am a software developer based in Windsor, Ontario. <br/>
+                I have a passion for creating <strong>beautiful,</strong> functional, and user-friendly applications. <br/>
+                My goal is to use my <strong>creativity</strong> in ways that bring <strong>satisfaction</strong> to others. <br/>
+
+                <br/>I am currently pursuing a degree in Mobile Application Development at St. Clair College.
+                I have worked on several projects, including full-stack web and mobile applications. <br/>
+                I am always eager to learn new technologies and improve my skills. <br/>
                 </p>
 
                 <div className='career'>
                     <h3>EXPERIENCE</h3>
                     <Item
-                        title="CICAN Hackathon"
+                        title="CICan Hackathon"
                         date="2025"
                         description="Hackathon hosted by Colleges and Institutes of Canada"
                     />
                     <Item
-                        title="WinHacks"
+                        title="WinHacks Hackathon"
                         date="2025"
                         description="Hackathon hosted by University of Windsor"
                     />
                     <Item
-                        title="Software Development Student"
+                        title="Programming"
                         date="2023 - NOW"
-                        description="Learning practices and principles of software development through
+                        description="Learning software development through
                         the development of full stack applications."
                     />
 
