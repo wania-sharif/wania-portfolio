@@ -32,9 +32,13 @@
 .contact ul > li > a {
     font-weight: 300;
     transition-duration: 300ms;
+    padding-bottom: 1px;
 }
 .contact ul > li > a:hover {
     color: #ffffff;
+}
+.contact ul > li > a::after {
+  background-color: #e4d3c4
 }
 
 /* copyright */

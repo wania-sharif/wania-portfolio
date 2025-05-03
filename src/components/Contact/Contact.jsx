@@ -18,9 +18,11 @@ const Contact = () => {
                 animate={ isInView && { opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}>
                 <ul>
-                    <li><a href="mailto:dev.waniash@gmail.com">dev.waniash@gmail.com</a></li>
-                    <li><a href="https://www.linkedin.com/in/wania-sharif-a76834324" target='_blank'>LinkedIn</a></li>
-                    <li><a href="https://github.com/wania-sharif" target='_blank'>GitHub</a></li>
+                    <li><a href="mailto:dev.waniash@gmail.com" className='underline'>dev.waniash@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/wania-sharif-a76834324" 
+                            target='_blank'
+                            className='underline'>LinkedIn</a></li>
+                    <li><a href="https://github.com/wania-sharif" target='_blank' className='underline'>GitHub</a></li>
                 </ul>
             </motion.div>
 
