@@ -19,7 +19,7 @@
 
   color-scheme: light;
   color: var(--brown);
-  background: radial-gradient(at left top, #ecc0cf, #ece7d0);
+  background: linear-gradient(100deg,rgb(230, 188, 198) 0%, rgba(227, 214, 211, 1) 59%, rgba(219, 236, 214, 1) 94%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,10 +38,10 @@ a {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 6.4em;
   font-family: MissFajardose, cursive, serif;
   font-style: italic;
-  letter-spacing: 2px;
+  color: #453f3fb1;
 }
 
 h2 {

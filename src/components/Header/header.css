@@ -7,7 +7,6 @@
     top: 0;
     z-index: 2;
     font-size: 13px;
-    backdrop-filter: blur(14px);
 }
 
 /* header lists  */

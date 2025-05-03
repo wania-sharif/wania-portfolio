@@ -2,7 +2,7 @@ import './about.css';
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="about" id='about'>
             <div className='content'>
                 <div className='text'>
                     <p>Hey, I'm Wania!<br/> I am a software developer based in Windsor, Ontario. <br/><br/>
