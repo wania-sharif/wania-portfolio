@@ -73,7 +73,7 @@
 @media screen and (max-width: 560px) {
     .home {
         font-size: 10px;
-        padding: 3em 1em 0;
+        padding: 3em 6% 0;
         overflow-x: hidden;
     }
 }

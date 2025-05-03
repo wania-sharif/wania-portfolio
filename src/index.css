@@ -10,6 +10,10 @@
   font-family: Dawn;
   src: url('/src/assets/fonts/DawningofaNewDay-Regular.ttf');
 }
+@font-face {
+  font-family: pecita;
+  src: url('/src/assets/fonts/pecita.book.otf');
+}
 
 /* default styles  */
 :root {
@@ -58,10 +62,11 @@ a.underline:focus::after {
 }
 
 h1 {
-  font-size: 8em;
-  font-family: MissFajardose, cursive, serif;
+  font-size: 7em;
+  font-family: pecita, WindSong, cursive, serif;
+  font-weight: 100;
   font-style: italic;
-  color: #453f3f94;
+  color: #756868;
 }
 
 h2 {
