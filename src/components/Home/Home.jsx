@@ -5,19 +5,16 @@ function Home() {
 
   return (
     <div className='home' id='home'>
-      <motion.h1
-      initial={{ translateY: 40, opacity: 0 }}
-      animate={{ translateY: 0, opacity: 1 }}
-      transition={{duration: .3, ease: "easeInOut"}}
-      >Wania S.</motion.h1>
+      <h1>Wania S.</h1>
 
-      <span className='line'></span>
+      <h3>SOFTWARE DEVELOPER</h3>
 
-      <motion.h2
-      initial={{ translateY: 40, opacity: 0 }}
-      animate={{ translateY: 0, opacity: 1 }}
-      transition={{duration: .4, ease: "easeInOut", delay: .1}}
-      >SOFTWARE DEVELOPER</motion.h2>
+      <a href="#projects">SCROLL DOWN 
+        <div class="arrow">
+          <div class="arrow-body"></div>
+          <div class="arrow-head"></div>
+        </div> 
+      </a>
     </div>
   )
 }
