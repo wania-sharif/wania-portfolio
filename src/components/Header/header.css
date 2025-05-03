@@ -18,6 +18,9 @@
 .header > ul:nth-of-type(2) {
     width: 580px;
 }
+.header > ul:nth-of-type(4) {
+    display: none;
+}
 
 /* header list items  */
 .header > ul > li {
@@ -41,7 +44,14 @@
 
 /* smaller screen styles */
 @media screen and (max-width: 860px) {
-    .header > ul:nth-of-type(2) {
+    .header > ul {
+        width: fit-content;
+        padding: 0 20px;
+    }
+    .header > ul:nth-of-type(2), .header > ul:nth-of-type(3) {
         display: none;
+    }
+    .header > ul:nth-of-type(4) {
+        display: block;
     }
 }

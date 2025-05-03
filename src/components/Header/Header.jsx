@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.css';
+import Burger from './Burger/Burger';
 
 const Header = () => {
     return (
@@ -19,6 +20,9 @@ const Header = () => {
 
             <ul>
                 <li><a href="#contact" className='underline'>CONTACT</a></li>
+            </ul>
+            <ul>
+                <Burger />
             </ul>
         </div>
     );
