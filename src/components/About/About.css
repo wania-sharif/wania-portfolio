@@ -21,16 +21,18 @@
 
 /* paragraph */
 .about .text > p {
+    box-sizing: border-box;
     width: 34em;
     line-height: 1.5em;
     margin-top: 8rem;
-    font-size: 17px;
+    font-size: 16px;
+    border-left: 1px solid rgb(40, 35, 33);
+    padding: 1.5em;
 }
 /* highlighted words  */
 .about strong {
     font-weight: 400;
-    color: #318881;
-    font-style: italic;
+    color: #5c8d64;
 }
 
 .about .content button {
@@ -41,6 +43,7 @@
 /* career container  */
 .about .content .career {
     width: 20em;
+    box-sizing: border-box;
 }
 
 /* career item headers  */
@@ -61,12 +64,14 @@
 
 /* career item  */
 .about .career-item {
+    box-sizing: border-box;
     font-size: 13px;
     padding: 0 .3em;
     margin: 3em 0;
 }
 /* career item title */
 .about .career-item > h4 {
+    box-sizing: border-box;
     font-size: 13px;
     font-weight: 600;
     margin-bottom: .4em;
@@ -80,24 +85,18 @@
 @media screen and (max-width: 1220px) {
     .about .content {
         flex-direction: column;
-        padding: 2em;
+        padding: 1em;
     }
 
-    .about .career {
+    .about .text > p {
+        width: 100%;
+        padding: 10px;
+    }
+    .about .content .career {
         width: 100%;
     }
     .about .career-item {
         margin: 1.5em 0;
     }
     
-}
-
-@media screen and (max-width: 1220px) {
-    .about .text > p {
-        width: 100%;
-    }
-
-    .about .career {
-        width: 100%;
-    }
 }

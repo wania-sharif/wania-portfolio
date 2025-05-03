@@ -5,11 +5,11 @@ const About = () => {
         <div className="about" id='about'>
             <div className='content'>
                 <div className='text'>
-                    <p>Hey, I'm Wania!<br/> I am a software developer based in Windsor, Ontario. <br/><br/>
-                    I have a passion for creating <strong>beautiful,</strong> functional, and user-friendly applications.
+                    <p>Hey, I'm <strong>Wania!</strong><br/> I am a software developer based in Canada. <br/><br/>
+                    I have a <strong>passion</strong> for creating <strong>beautiful,</strong> functional, and user-friendly applications.
                     My goal is to use my <strong>creativity</strong> to cultivate experiences that satisfy others. <br/>
                     </p>
-                    <button>MORE ABOUT ME</button>
+                    {/* <button>MORE ABOUT ME</button> */}
                 </div>
 
                 <div className='career'>

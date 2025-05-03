@@ -15,9 +15,9 @@ function Home() {
       </div>
 
       <a className='scroll'href="#projects">SCROLL DOWN 
-        <div class="arrow">
-          <div class="arrow-body"></div>
-          <div class="arrow-head"></div>
+        <div className="arrow">
+          <div className="arrow-body"></div>
+          <div className="arrow-head"></div>
         </div> 
       </a>
     </div>
