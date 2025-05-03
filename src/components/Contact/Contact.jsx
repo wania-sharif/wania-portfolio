@@ -11,7 +11,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={ isInView && { opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            >Let's chat</motion.h3>
+            >Contact me</motion.h3>
 
             <motion.div className="socials"
                 initial={{ opacity: 0, y: -50 }}

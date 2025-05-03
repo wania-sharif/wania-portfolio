@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import './about.css';
 import { motion, useInView } from 'framer-motion';
-import { a } from 'framer-motion/client';
 
 const About = () => {
     const slideIn = {

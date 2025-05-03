@@ -1,8 +1,8 @@
 .contact {
     height: 60vh;
     padding: 10vh 4vw 0;
-    background-color: var(--brown);
-    color: #f3e1d1;
+    background-color: #454140;
+    color: #fbe3db;
     display: flex;
     flex-direction: column;
     gap: 6em;
@@ -43,6 +43,7 @@
 
 /* copyright */
 .contact .copyright {
+    color: #b3ccb2;
     font-size: 0.7em;
     text-align: right;
     margin-top: auto;
