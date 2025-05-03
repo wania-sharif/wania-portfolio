@@ -1,16 +1,37 @@
+import { useRef } from 'react';
 import './about.css';
+import { motion, useInView } from 'framer-motion';
 
 const About = () => {
+    const slideIn = {
+        hidden: {
+          opacity: 0,
+          x: -100
+        },
+        visible: {
+          opacity: 1,
+          x: 0
+        }
+    };
+
+    const transition = {
+        duration: 0.5,
+        delay: 0.3,
+    }
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, {amount: 0.5});
+
     return (
         <div className="about" id='about'>
             <div className='content'>
-                <div className='text'>
-                    <p>Hey, I'm <strong>Wania!</strong><br/> I am a software developer based in Canada. <br/><br/>
-                    I have a <strong>passion</strong> for creating <strong>beautiful,</strong> functional, and user-friendly applications.
+                <motion.div className='text' ref={ref} initial='hidden' animate={isInView ? 'visible': 'hidden'}>
+                    <motion.p variants={slideIn} transition={transition}>Hey, I'm <strong>Wania!</strong><br/> I am a software developer based in Canada. <br/><br/>
+                    I have a <strong>passion</strong> for creating <strong>beautiful</strong>, functional, and user-friendly applications.
                     My goal is to use my <strong>creativity</strong> to cultivate experiences that satisfy others. <br/>
-                    </p>
+                    </motion.p>
                     {/* <button>MORE ABOUT ME</button> */}
-                </div>
+                </motion.div>
 
                 <div className='career'>
                     <h3>EXPERIENCE</h3>
