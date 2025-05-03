@@ -38,8 +38,7 @@
 /* arrow  */
 .home .arrow {
     padding: 5px 18px;
-    animation: bounce 1s;
-    animation-direction: alternate;
+    animation: bounce 1.6s;
     animation-iteration-count: infinite;
     display: inline-block;
 }
@@ -59,8 +58,14 @@
 
 /* arrow animation  */
 @keyframes bounce {
-    from { transform: translate3d(0, 0, 0); }
-    to   { transform: translate3d(0, 5px, 0); }
+    from {
+            transform: translate3d(0, 0, 0); 
+            opacity: 0;
+        }
+    to  { 
+            transform: translate3d(0, 10px, 0); 
+            opacity: 1;
+        }
   }
 
 @media screen and (max-width: 560px) {
