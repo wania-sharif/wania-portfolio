@@ -19,7 +19,7 @@
 
   color-scheme: light;
   color: var(--brown);
-  background: linear-gradient(100deg,rgb(230, 188, 198) 0%, rgba(227, 214, 211, 1) 59%, rgba(219, 236, 214, 1) 94%);
+  background: linear-gradient(100deg,rgb(230, 188, 198) 0%, rgba(227, 214, 211, 1) 59%, rgb(226, 236, 214) 94%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -49,7 +49,7 @@ h2 {
 }
 
 h3 {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 button {
