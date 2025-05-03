@@ -19,6 +19,7 @@
 /* title + scroll btn */
 .home h3, .home a {
     font-size: 13px;
+    padding-bottom: 2px;
 }
 
 .home .home-socials {
@@ -32,7 +33,7 @@
     margin-top: 7em;
     width: 100%;
     text-align: center;
-    translate: 26px 0;
+    translate: 20px 0;
 }
 
 /* arrow  */
@@ -66,8 +67,9 @@
             transform: translate3d(0, 10px, 0); 
             opacity: 1;
         }
-  }
+}
 
+/* media queries */
 @media screen and (max-width: 560px) {
     .home {
         font-size: 10px;
