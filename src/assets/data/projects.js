@@ -6,7 +6,7 @@ const projects = [
             '/images/renova1.png',
             '/images/renova3.png',
             '/images/renova2.png'],
-        tech: ['ReactJS', 'NodeJS', 'ExpressJS'],
+        tech: ['JavaScript', 'React', 'ExpressJS', 'HTML', 'CSS'],
         link: 'https://github.com/wania-sharif'
     },
     {
@@ -16,7 +16,7 @@ const projects = [
             '/images/money-app.png',
             '/images/money-app2.png',
             '/images/money-app3.png'],
-        tech: ['Java', 'JDBC', 'IntelliJ'],
+        tech: ['Java', 'JDBC', 'MySQL', 'IntelliJ', 'CSS'],
         link: 'https://github.com/wania-sharif'
     },
     {

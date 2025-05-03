@@ -76,7 +76,7 @@
 /* tech list  */
 .project-card ul {
     display: flex;
-    gap: 0.9em;
+    gap: 0.4em;
     margin: 0 0 0.7em 0.7em;
 }
 
