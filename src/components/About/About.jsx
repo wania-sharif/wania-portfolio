@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import './about.css';
 import { motion, useInView } from 'framer-motion';
+import { a } from 'framer-motion/client';
 
 const About = () => {
     const slideIn = {
@@ -20,7 +21,7 @@ const About = () => {
     }
 
     const ref = useRef(null);
-    const isInView = useInView(ref, {amount: 0.5});
+    const isInView = useInView(ref, {amount: 0.1, once: true});
 
     return (
         <div className="about" id='about'>
@@ -39,17 +40,26 @@ const About = () => {
                         title="CICan Hackathon"
                         date="2025"
                         description="Hackathon hosted by Colleges and Institutes of Canada"
+                        variants={slideIn}
+                        delay={0.5}
+                        animate={isInView ? 'visible': 'hidden'}
                     />
                     <Item
                         title="WinHacks Hackathon"
                         date="2025"
                         description="Hackathon hosted by University of Windsor"
+                        variants={slideIn}
+                        delay={0.7}
+                        animate={isInView ? 'visible': 'hidden'}
                     />
                     <Item
                         title="Programming"
                         date="2023 - NOW"
                         description="Learning software development through
                         the development of full stack applications."
+                        variants={slideIn}
+                        delay={0.9}
+                        animate={isInView ? 'visible': 'hidden'}
                     />
 
                     {/* <h3>AWARDS</h3> 
@@ -73,13 +83,13 @@ const About = () => {
 }
 
 // Item component to display individual items in the career section
-const Item = ({ title, date, description }) => {
+const Item = ({ title, date, description, variants, delay, animate}) => {
     return (
-        <div className='career-item'>
+        <motion.div className='career-item' variants={variants} transition={{duration: 0.3, delay: delay}} animate={animate}>
             <h4>{title}</h4>
             <p>{date}</p>
             <p>{description}</p>
-        </div>
+        </motion.div>
     );
 }
 
