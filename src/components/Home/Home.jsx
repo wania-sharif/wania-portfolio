@@ -9,7 +9,12 @@ function Home() {
 
       <h3>SOFTWARE DEVELOPER</h3>
 
-      <a href="#projects">SCROLL DOWN 
+      <div className='home-socials'>
+        <a href="" target='_blank' className='underline'>LINKEDIN</a>
+        <a href="" target='_blank' className='underline'>GITHUB</a>
+      </div>
+
+      <a className='scroll'href="#projects">SCROLL DOWN 
         <div class="arrow">
           <div class="arrow-body"></div>
           <div class="arrow-head"></div>

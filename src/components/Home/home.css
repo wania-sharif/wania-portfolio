@@ -1,12 +1,12 @@
 .home {
     height: 90vh;
-    max-width: 1000px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    padding: 0 3em;
-    gap: 2em;
+    padding: 4em 3em 0;
+    gap: 3em;
     text-align: left;
 }
 
@@ -18,15 +18,21 @@
 
 /* title + scroll btn */
 .home h3, .home a {
-    font-size: 13.6px;
+    font-size: 13px;
+}
+
+.home .home-socials {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
 }
 
 /* scroll down btn  */
-.home a {
-    margin-top: 10em;
+.home a.scroll {
+    margin-top: 7em;
     width: 100%;
-    /* text-align: center; */
-    /* translate: 16px 0; */
+    text-align: center;
+    translate: 26px 0;
 }
 
 /* arrow  */
