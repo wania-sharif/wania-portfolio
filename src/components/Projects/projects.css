@@ -5,12 +5,11 @@
 
 /* page content container */
 .projects .content {
-    height: 100vh;
     width: 100%;
     position: sticky;
     top: 0;
     overflow: hidden;
-    padding-top: 8em;
+    padding-top: 80px;
 }
 
 /* header */

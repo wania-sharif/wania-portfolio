@@ -1,5 +1,5 @@
 .contact {
-    height: 60vh;
+    min-height: 60vh;
     padding: 10vh 4vw 0;
     background-color: #454140;
     color: #fbe3db;
