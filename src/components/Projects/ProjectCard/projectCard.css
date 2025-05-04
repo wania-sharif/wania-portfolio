@@ -92,12 +92,16 @@
 /* adjust size for small screens  */
 @media screen and (max-width: 580px) {
     .project-card {
-        font-size: 12px;
+        width: 24em;
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
     .project-card {
         width: 18em;
+    }
+
+    .project-card .image {
+        height: 10em;
     }
 }
