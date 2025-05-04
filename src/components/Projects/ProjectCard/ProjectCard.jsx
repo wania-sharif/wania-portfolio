@@ -4,23 +4,36 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Expand from '../../animated/Expand'
 
 function ProjectCard(props) {
-
+  // State to track the current image index
   const [image, setImage] = useState(0)
+  // State to track if the card is hovered
   const [isHovered, setIsHovered] = useState(false)
 
+  let timeout = null
+
+  // Function to set the hovered state and change the image
   function setHovered() {
     setImage(1)
     setIsHovered(true)
   }
 
+  // Function to set the not hovered state and clear the timeout
   function setNotHovered() {
     setImage(0)
     setIsHovered(false)
     clearTimeout(timeout)
   }
 
-  let timeout = null
+  // Preload images
+  useEffect(() => {
+      props.project.images.forEach((image) => {
+        new Image().src = image;
+      });
+      console.log("loaded images")
+  }, [])
 
+
+  // Change image every 1.6 seconds if card is hovered
   useEffect(() => {
     timeout = isHovered &&
       setTimeout(() => {
