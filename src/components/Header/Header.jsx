@@ -14,7 +14,7 @@ const Header = () => {
                 <li><a href="https://drive.google.com/file/d/1qDexofZBdZ7bYsMRQ84dvZZ6GAEHSIRg/view?usp=sharing"
                 target="_blank"
                 className='underline'
-                >RESUME</a><img src="wania-portfolio/images/arrow.png" className='arrow'/></li>
+                >RESUME</a><img src="./images/arrow.png" className='arrow'/></li>
             </ul>
 
             <ul>

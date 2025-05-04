@@ -7,11 +7,11 @@ const Contact = () => {
     const isInView = useInView(ref, { amount: 0.8, once: true });
     return (
         <div className="contact" id="contact" ref={ref}>
-            <motion.h3
+            <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={ isInView && { opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            >Contact me</motion.h3>
+            >Contact me!</motion.h1>
 
             <motion.div className="socials"
                 initial={{ opacity: 0, y: -50 }}
