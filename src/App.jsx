@@ -32,7 +32,6 @@ function App() {
       <Home />
       <Projects />
       <About />
-      <Contact />
     </div>
   )
 }
