@@ -1,0 +1,85 @@
+.home {
+    min-height: 90vh;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 4em 3em 0;
+    gap: 3em;
+    text-align: left;
+}
+
+/* name  */
+.home h1 {
+    white-space: nowrap;
+    translate: -10px 0;
+}
+
+/* title + scroll btn */
+.home h3, .home a {
+    font-size: 13px;
+    padding-bottom: 2px;
+}
+
+.home .home-socials {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+/* scroll down btn  */
+.home a.scroll {
+    margin-top: 7em;
+    width: 100%;
+    text-align: center;
+    translate: 20px 0;
+}
+
+/* arrow  */
+.home .arrow {
+    padding: 5px 18px;
+    animation: bounce 1.6s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+.home .arrow-head{
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right:  3px solid transparent;
+    border-top: 3px solid var(--brown);
+}
+.home .arrow-body{
+    height: 10px;
+    width: 1px;
+    background-color: var(--brown);
+    margin-left: 2.4px
+}
+
+/* arrow animation  */
+@keyframes bounce {
+    from {
+            transform: translate3d(0, 0, 0); 
+            opacity: 0;
+        }
+    to  { 
+            transform: translate3d(0, 10px, 0); 
+            opacity: 1;
+        }
+}
+
+/* media queries */
+@media screen and (max-width: 560px) {
+    .home {
+        font-size: 10px;
+        padding: 3em 6% 0;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .home {
+        font-size: 8px;
+    }
+}

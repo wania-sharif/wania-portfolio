@@ -1,0 +1,52 @@
+.contact {
+    /* max-width: 100vw; */
+    min-height: 60vh;
+    padding: 10vh 4vw 0;
+    background-color: #454140;
+    color: #fbe3db;
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+}
+/* header  */
+.contact h3 {
+    letter-spacing: 1px;  
+    font-size: 2.4em;  
+    font-weight: 100;
+    text-align: left;
+}
+
+/* socials section */
+.contact .socials {
+    max-width: 26em;
+    border-top: 1px solid #f3e1d177;
+    text-align: left;
+    font-weight: 200;
+}
+
+/* list items  */
+.contact ul > li {
+    margin: .9em 0;
+}
+
+/* links  */
+.contact ul > li > a {
+    font-weight: 300;
+    transition-duration: 300ms;
+    padding-bottom: 1px;
+}
+.contact ul > li > a:hover {
+    color: #ffffff;
+}
+.contact ul > li > a::after {
+  background-color: #e4d3c4
+}
+
+/* copyright */
+.contact .copyright {
+    color: #b3ccb2;
+    font-size: 0.7em;
+    text-align: right;
+    margin-top: auto;
+    padding-bottom: 2em;
+}

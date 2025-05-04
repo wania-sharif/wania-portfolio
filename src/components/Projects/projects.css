@@ -1,0 +1,29 @@
+.projects {
+    min-height: 300vh;
+    position: relative;
+}
+
+/* page content container */
+.projects .content {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+/* header */
+.projects .content > h2 {
+    font-weight: 400;
+    padding: 1em 0 3em;
+    width: 100%;
+}
+
+/* project card container */
+.projects .card-container {
+    height: 70vh;
+    align-items: flex-start;
+    width: fit-content;
+    display: flex;
+    padding-top: 5em;
+}

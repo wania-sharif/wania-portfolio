@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    font-size: 13px;
+}
+
+/* header lists  */
+.header > ul {
+    width: 130px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header > ul:nth-of-type(2) {
+    width: 580px;
+}
+
+/* header list items  */
+.header > ul > li {
+    margin: 10px;
+}
+
+/* links */
+.header > ul > li > a {
+    padding-bottom: 2px;
+    color: inherit;
+    display: inline-block;
+    position: relative;
+}
+
+/* arrow icon  */
+.header .arrow {
+    display: inline;
+    padding-left: 4px;
+    height: 11px;
+}
+
+/* smaller screen styles */
+@media screen and (max-width: 860px) {
+    .header {
+        display: none;
+        justify-content: flex-end;
+    }
+    .header > ul {
+        display: none;
+    }
+}
