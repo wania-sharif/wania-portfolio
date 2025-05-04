@@ -14,12 +14,12 @@ function Projects() {
   const { scrollYProgress } = useScroll();
 
   // Map scroll position values
-  const x = useTransform(scrollYProgress, [0, 1], ["100%", "-100%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["100%", "-190%"]);
 
   return (
     <div className='projects' id='projects'>
         <div className='content'>
-          <h2>PROJECTS</h2>
+          <h2>FEATURED PROJECTS</h2>
 
           <motion.div style={{ x }} className='card-container'>
             {projectCards}

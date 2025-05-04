@@ -10,6 +10,10 @@
   font-family: Dawn;
   src: url('/src/assets/fonts/DawningofaNewDay-Regular.ttf');
 }
+@font-face {
+  font-family: pecita;
+  src: url('/src/assets/fonts/pecita.book.otf');
+}
 
 /* default styles  */
 :root {
@@ -19,7 +23,7 @@
 
   color-scheme: light;
   color: var(--brown);
-  background: radial-gradient(at left top, #ecc0cf, #ece7d0);
+  background: linear-gradient(100deg,rgb(230, 188, 198) 0%, rgba(227, 214, 211, 1) 59%, rgb(226, 236, 214) 94%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -35,13 +39,34 @@
 a {
   color: inherit;
   text-decoration: inherit;
+  position: relative;
+  width: fit-content;
+}
+
+/* underline animation */
+a.underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--brown);
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom center;
+}
+a.underline:hover::after,
+a.underline:focus::after {
+  transform: scaleX(1);
 }
 
 h1 {
-  font-size: 5em;
-  font-family: MissFajardose, cursive, serif;
+  font-size: 7em;
+  font-family: pecita, WindSong, cursive, serif;
+  font-weight: 100;
   font-style: italic;
-  letter-spacing: 2px;
+  color: #756868;
 }
 
 h2 {
@@ -49,7 +74,7 @@ h2 {
 }
 
 h3 {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 button {

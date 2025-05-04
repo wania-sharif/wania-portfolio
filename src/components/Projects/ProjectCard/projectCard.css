@@ -1,6 +1,6 @@
 .project-card {
     font-size: 15px;
-    width: 26em;
+    width: 27em;
     margin: 0 4em;
     border: 1px solid rgb(40, 35, 33);
 
@@ -36,12 +36,20 @@
 }
 
 /* link to github  */
+.project-card .link {
+    font-size: .8em;
+    border-radius: 13px;
+}
 .project-card .link:hover {
-    color: #7c867c;
+    padding: 0.4em 1em;
 }
 .project-card .link img {
     height: .9em;
     margin-left: 0.2em;
+}
+.project-card .link a {
+    width: 100%;
+    height: 100%;
 }
 
 /* image container  */
@@ -68,12 +76,12 @@
 /* tech list  */
 .project-card ul {
     display: flex;
-    gap: 0.9em;
+    gap: 0.4em;
     margin: 0 0 0.7em 0.7em;
 }
 
 .project-card ul > li {
-    background-color: #d7a0ac;
+    background-color: var(--pink);
     color: #ffffff;
     padding: 5px 8px;
     border-radius: 15px;
@@ -84,6 +92,16 @@
 /* adjust size for small screens  */
 @media screen and (max-width: 580px) {
     .project-card {
-        font-size: 12px;
+        width: 24em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .project-card {
+        width: 18em;
+    }
+
+    .project-card .image {
+        height: 10em;
     }
 }

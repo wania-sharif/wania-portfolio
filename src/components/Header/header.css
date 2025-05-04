@@ -5,9 +5,8 @@
     height: 60px;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     font-size: 13px;
-    backdrop-filter: blur(14px);
 }
 
 /* header lists  */
@@ -33,25 +32,6 @@
     position: relative;
 }
 
-/* link underline */
-.header a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #28211e;
-    transition: transform 0.25s ease-out;
-
-    transform-origin: bottom center;
-}
-.header a:hover::after,
-.header a:focus::after{
-    transform: scaleX(1);
-}
-
 /* arrow icon  */
 .header .arrow {
     display: inline;
@@ -61,7 +41,11 @@
 
 /* smaller screen styles */
 @media screen and (max-width: 860px) {
-    .header > ul:nth-of-type(2) {
+    .header {
+        display: none;
+        justify-content: flex-end;
+    }
+    .header > ul {
         display: none;
     }
 }
