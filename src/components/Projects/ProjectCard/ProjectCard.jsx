@@ -40,7 +40,7 @@ function ProjectCard(props) {
           <AnimatePresence mode="wait">
             {isHovered && (
             <Expand>
-              <button className='link'><a href={props.project.link} target='_blank'>View on GitHub<img src="images/arrow.png" className='arrow'/></a></button>
+              <button className='link'><a href={props.project.link} target='_blank'>View on GitHub<img src="wania-portfolio/images/arrow.png" className='arrow'/></a></button>
             </Expand>
             )}
           </AnimatePresence>
