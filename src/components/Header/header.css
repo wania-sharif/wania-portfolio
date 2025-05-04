@@ -5,7 +5,7 @@
     height: 60px;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     font-size: 13px;
 }
 
@@ -17,9 +17,6 @@
 }
 .header > ul:nth-of-type(2) {
     width: 580px;
-}
-.header > ul:nth-of-type(4) {
-    display: none;
 }
 
 /* header list items  */
@@ -44,14 +41,11 @@
 
 /* smaller screen styles */
 @media screen and (max-width: 860px) {
-    .header > ul {
-        width: fit-content;
-        padding: 0 20px;
-    }
-    .header > ul:nth-of-type(2), .header > ul:nth-of-type(3) {
+    .header {
         display: none;
+        justify-content: flex-end;
     }
-    .header > ul:nth-of-type(4) {
-        display: block;
+    .header > ul {
+        display: none;
     }
 }

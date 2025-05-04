@@ -1,9 +1,9 @@
 import React from 'react';
 import './burger.css';
 
-const Burger = () => {
+const Burger = (props) => {
   return (
-    <div>
+    <div onClick={(e) => props.handleNavToggle(e)} className="burger-container">
       <label className="burger" htmlFor="burger">
         <input type="checkbox" id="burger" />
         <span />

@@ -1,4 +1,11 @@
 /* From Uiverse.io by Cevorob */ 
+.burger-container {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+}
 .burger {
     position: relative;
     width: 30px;
@@ -57,4 +64,11 @@
     transform: rotate(-45deg);
     top: 21px;
     left: 7px;
+}
+
+/* smaller screen styles */
+@media screen and (max-width: 860px) {
+    .burger-container {
+        display: block;
+    }
 }
