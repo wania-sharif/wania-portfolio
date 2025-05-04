@@ -24,6 +24,10 @@ function Projects() {
           <motion.div style={{ x }} className='card-container'>
             {projectCards}
           </motion.div>
+          
+          <div className='card-container-mobile'>
+            {projectCards}
+          </div>
         </div>
     </div>
   )

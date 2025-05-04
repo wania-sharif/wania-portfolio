@@ -27,3 +27,25 @@
     display: flex;
     padding-top: 5em;
 }
+
+/* mobile project card container  */
+.projects .card-container-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .projects .card-container {
+        display: none;
+    }
+    .projects .card-container-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5em;
+    }
+}

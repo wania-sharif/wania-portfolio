@@ -96,9 +96,9 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 390px) {
     .project-card {
-        width: 18em;
+        width: 90%;
     }
 
     .project-card .image {
