@@ -1,27 +1,29 @@
 .mobile-nav {
     box-sizing: border-box;
     width: 100vw;
-    height: 270px;
+    height: 100vh;
     position: fixed;
-    top: -270px;
+    top: -100vh;
     right: 0;
     z-index: 2;
     background-color: rgba(199, 206, 195, 0.839);
-    border: 1px solid var(--brown);
+    border-bottom: 3px solid var(--brown);
     text-align: right;
     padding-top: 2em;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 
     transition-duration: 700ms;
 }
 
 /* nav list item  */
 .mobile-nav li {
+    font-size: 1.3em;
+    font-weight: 300;
     padding-right: 2em;
-    margin: 1em 0;
+    margin: 2em 0;
 }
 
 /* move down when nav is open  */
