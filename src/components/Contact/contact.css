@@ -10,10 +10,9 @@
 /* header  */
 .contact h1 {
     letter-spacing: 1px;  
-    font-size: 4em;  
+    font-size: 5.3em;  
     font-weight: 100;
     text-align: left;
-    color: #c8b7b7;
 }
 
 /* socials section */
@@ -21,7 +20,6 @@
     max-width: 26em;
     border-top: 1px solid #f3e1d177;
     text-align: left;
-    font-weight: 200;
 }
 
 /* list items  */
@@ -44,8 +42,7 @@
 
 /* copyright */
 .contact .copyright {
-    color: #b3ccb2;
-    font-size: 0.7em;
+    font-size: 0.6em;
     text-align: right;
     margin-top: auto;
     padding-bottom: 2em;
