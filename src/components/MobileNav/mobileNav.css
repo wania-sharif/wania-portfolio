@@ -6,7 +6,7 @@
     top: -100vh;
     right: 0;
     z-index: 2;
-    background-color: rgba(199, 206, 195, 0.839);
+    background-color: rgb(204, 206, 200);
     border-bottom: 3px solid var(--brown);
     text-align: right;
     padding-top: 2em;
@@ -20,10 +20,16 @@
 
 /* nav list item  */
 .mobile-nav li {
-    font-size: 1.3em;
-    font-weight: 300;
-    padding-right: 2em;
+    font-size: 1.8em;
+    font-weight: 200;
+    padding-right: 8vw;
     margin: 2em 0;
+}
+
+/* second ul list items */
+.mobile-nav ul:last-of-type li {
+    font-size: .9em;
+    font-weight: 500;
 }
 
 /* move down when nav is open  */
