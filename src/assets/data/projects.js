@@ -1,5 +1,14 @@
 const projects = [
     {
+        name: 'Bookshelf App',
+        description: 'A simple book tracker app to manage your reading collections',
+        images: [
+            './images/bookshelf.png',
+            './images/bookshelf1.png',
+            './images/bookshelf2.png'],
+        tech: ['iOS', 'Swift', 'Xcode', 'Core Data'],
+    },
+    {
         name: 'Renova',
         description: 'E-commerce platform for a clothing line',
         images: [
