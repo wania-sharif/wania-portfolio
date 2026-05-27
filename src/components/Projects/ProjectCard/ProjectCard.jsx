@@ -51,7 +51,7 @@ function ProjectCard(props) {
           <h4>{props.project.description}</h4>
 
           <AnimatePresence mode="wait">
-            {isHovered && (
+            {isHovered && props.project.link &&(
             <Expand>
               <button className='link'><a href={props.project.link} target='_blank'>View on GitHub<img src="./images/arrow.png" className='arrow'/></a></button>
             </Expand>
