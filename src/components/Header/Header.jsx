@@ -11,7 +11,7 @@ const Header = () => {
             <ul>
                 <li><a href="#projects" className='underline'>PROJECTS</a></li>
                 <li><a href="#about" className='underline'>ABOUT ME</a></li>
-                <li><a href="https://drive.google.com/file/d/1qDexofZBdZ7bYsMRQ84dvZZ6GAEHSIRg/view?usp=sharing"
+                <li><a href="https://drive.google.com/file/d/1IlMIxwd-BYiafAJwj1J1G1beCjp4ln-Y/view?usp=sharing"
                 target="_blank"
                 className='underline'
                 >RESUME</a><img src="./images/arrow.png" className='arrow'/></li>
