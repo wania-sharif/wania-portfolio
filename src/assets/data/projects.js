@@ -1,5 +1,14 @@
 const projects = [
     {
+        name: 'Arena One',
+        description: 'A competitive first-person hero shooter game',
+        images: [
+            './images/arenaone.png',
+            './images/arenaone1.png',
+            './images/arenaone2.png'],
+        tech: ['Roblox', 'Roblox Studio', 'Luau'],
+    },
+    {
         name: 'Bookshelf App',
         description: 'A simple book tracker app to manage your reading collections',
         images: [
@@ -7,6 +16,17 @@ const projects = [
             './images/bookshelf1.png',
             './images/bookshelf2.png'],
         tech: ['iOS', 'Swift', 'Xcode', 'Core Data'],
+        link: 'https://github.com/wania-sharif/BookshelfApp'
+    },
+    {
+        name: 'Portfolio Website',
+        description: 'The website you are currently on! A portfolio website to showcase my projects and experience',
+        images: [
+            './images/Portfolio.png',
+            './images/Portfolio1.png',
+            './images/Portfolio.png'],
+        tech: ['JavaScript', 'React', 'HTML', 'CSS'],
+        link: 'https://github.com/wania-sharif/wania-portfolio'
     },
     {
         name: 'Renova',
